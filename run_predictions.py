@@ -54,7 +54,7 @@ def detect_red_light(I):
     
     return bounding_boxes
 
-# set the path to the downloaded data: 
+# set the path to the downloaded data (updated for Alex Guerra): 
 data_path = '../data/RedLights2011_Medium'
 
 # set a path for saving predictions: 
