@@ -52,7 +52,7 @@ def detect_red_light(I, name=""):
     light_color = [255, 215, 150]
     
     # Light threshold values for rgb
-    light_thresh = [15, 50, 70]
+    light_thresh = [15, 70, 70]
     
     # Color of red corona
     red_corona_color = [160, 20, 20]
