@@ -49,10 +49,10 @@ def detect_red_light(I, name=""):
     of fixed size and returns the results in the proper format.
     '''
     # Color of light
-    light_color = [255, 215, 110]
+    light_color = [255, 215, 150]
     
     # Light threshold values for rgb
-    light_thresh = [15, 50, 50]
+    light_thresh = [15, 50, 70]
     
     # Color of red corona
     red_corona_color = [160, 20, 20]
@@ -91,14 +91,14 @@ def detect_red_light(I, name=""):
     print("Lights:", np.sum(lI), "Red:", np.sum(gI), "Final:", np.sum(fI))
     
     # Save so we can visualize all the intermittent results.
-    plt.imshow(lI)
-    plt.savefig("light_thresholds/" + name)
-    plt.imshow(gI)
-    plt.savefig("glow_thresholds/" + name)
-    plt.imshow(fI)
-    plt.savefig("final_thresholds/" + name)
-    plt.imshow(lI_expanded)
-    plt.savefig("expanded_thresholds/" + name)
+    # plt.imshow(lI)
+    # plt.savefig("light_thresholds/" + name)
+    # plt.imshow(gI)
+    # plt.savefig("glow_thresholds/" + name)
+    # plt.imshow(fI)
+    # plt.savefig("final_thresholds/" + name)
+    # plt.imshow(lI_expanded)
+    # plt.savefig("expanded_thresholds/" + name)
     
     
     # Find the contours in this final filtered image
